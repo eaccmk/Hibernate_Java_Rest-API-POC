@@ -3,17 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>eaccmk.github.io</groupId>
-	<artifactId>REST_Assured_API_Testing_POC</artifactId>
+	<artifactId>Hibernate_Java_Rest-API-POC</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>REST_Assured_API_Testing_POC</name>
+	<name>Hibernate_Java_Rest-API-POC</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
 		<!-- Let's keep all versions here for handy update -->
+		<hibernate.coree.version>5.4.31.Final</hibernate.coree.version>
+		<mysql.connect.java.version>8.0.23</mysql.connect.java.version>
 		<json-simple.version>1.1.1</json-simple.version>
 		<rest-assured.version>4.3.0</rest-assured.version>
 		<junit.version>4.12</junit.version>
@@ -22,6 +23,19 @@
 
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.coree.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.connect.java.version}</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
